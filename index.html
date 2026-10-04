@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Cloud Storage</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>☁️ Student Cloud Storage</h1>
+            <p>Store and manage your study materials in the cloud</p>
+        </header>
+
+        <!-- Upload Section -->
+        <section class="upload-box">
+
+            <h2>Upload Notes</h2>
+
+            <input type="file" id="fileInput">
+
+            <button id="uploadBtn">
+                Upload to Cloud
+            </button>
+
+            <p id="message"></p>
+
+        </section>
+
+        <!-- Files Section -->
+        <section class="files-box">
+
+            <h2>📚 My Notes</h2>
+
+            <div id="fileList">
+                <p>Loading files...</p>
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- AWS SDK -->
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1692.0.min.js"></script>
+
+    <!-- Our JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
